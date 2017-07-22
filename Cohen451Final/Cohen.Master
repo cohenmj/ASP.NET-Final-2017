@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cohen.master.cs" Inherits="Cohen451Final.Cohen" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Michael Cohen</title>
+    <asp:ContentPlaceHolder ID="head" 
+        runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <hr />
+        <h1>Michael Cohen</h1>
+        <h2>INFO 451 Final</h2>
+        <hr />
+        <h3>Menu:</h3>
+        <asp:Menu ID="MainMenu" 
+            runat="server">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/QuestionA/Products.aspx" 
+                    Text="Question A" 
+                    Value="Question A">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/QuestionB/QuestionB.aspx" 
+                    Text="Question B" 
+                    Value="Question B">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/QuestionB/QuestionBP2.aspx" 
+                    Text="Question B Part 2" 
+                    Value="Question B Part 2">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/QuestionD/QuestionD.aspx" 
+                    Text="Question D" 
+                    Value="Question D">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <hr />
+        <br />
+        <asp:Label ID="lblA" 
+            runat="server" >
+        </asp:Label>
+        <asp:Label ID="lblB" 
+            runat="server"
+            Text="Products Available!" >
+        </asp:Label>
+        <br />
+        <asp:ContentPlaceHolder ID="MainContent" 
+            runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div>
+        <hr />
+        <asp:Label ID="lblC"
+            runat="server"
+            Text="Current Date & Time">
+        </asp:Label>
+        <br />
+        <asp:Label ID="lblD" 
+            runat="server" >
+        </asp:Label>
+    </div>
+</body>
+</html>
